@@ -1,0 +1,38 @@
+{
+  "name": "aangan",
+  "private": true,
+  "scripts": {
+    "start": "meteor run \n meteor mongo < script.js",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "@varld/popover": "^0.1.0",
+    "aos": "^2.3.4",
+    "bcrypt": "^3.0.8",
+    "classnames": "^2.3.1",
+    "file-api": "^0.10.4",
+    "history": "^4.10.1",
+    "image-to-base64": "^2.2.0",
+    "jquery": "^3.5.1",
+    "meteor-node-stubs": "^1.0.3",
+    "owl.carousel": "^2.3.4",
+    "rc-slider": "^9.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
